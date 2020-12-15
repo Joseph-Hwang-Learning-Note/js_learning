@@ -3,8 +3,8 @@ const clockTitle = clockContainer.querySelector("h1");
 
 function getTime() {
   const date = new Date();
-  const minutes = date.getMinutes();
-  const hours = date.getHours();
+  let minutes = date.getMinutes();
+  let hours = date.getHours();
   let seconds = date.getSeconds();
   if (seconds >= 0 && seconds <= 9) {
     seconds = "0" + String(seconds);
