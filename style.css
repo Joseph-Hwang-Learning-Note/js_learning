@@ -1,0 +1,12 @@
+body {
+  background-color: whitesmoke;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
