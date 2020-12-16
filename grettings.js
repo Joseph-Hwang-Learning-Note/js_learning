@@ -34,6 +34,7 @@ function loadName() {
   if (currentUser === null) {
     askForName();
   } else {
+    document.querySelector(".form").style.display = "none";
     paintGreeting(currentUser);
   }
 }

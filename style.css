@@ -6,6 +6,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding: 0;
+  margin: 0;
 }
 
 .form,
@@ -45,6 +47,9 @@ body {
   justify-content: flex-end;
   align-items: flex-start;
 }
+.weather-area div {
+  margin-right: 10px;
+}
 
 .clock-area {
   justify-content: center;
@@ -67,6 +72,11 @@ body {
   font-size: 22px;
 }
 
+.name-area h4 {
+  font-size: 28px;
+  text-align: center;
+}
+
 .form,
 .toDoForm {
   width: 100%;
@@ -79,6 +89,10 @@ body {
 .name-area,
 .to-do-list-area {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .toDoForm input {
@@ -90,4 +104,28 @@ body {
   text-align: center;
   color: #ffffff;
   font-size: 18px;
+  transition: width 0.5s ease-in-out;
+}
+
+.toDoForm input:focus {
+  width: 30%;
+}
+
+.photo-src-description-area {
+  position: fixed;
+  bottom: 0;
+  left: 20px;
+}
+
+.js-toDoList li span {
+  font-size: 22px;
+  opacity: 1;
+}
+
+.js-toDoList li button {
+  background-color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 10px;
+  border-radius: 8px;
 }
